@@ -1,4 +1,6 @@
-export const Overs = (overs) => ({
-    type: "OVERS",
-    payload: overs
-})
+export const Overs = (overs) => {
+    return {
+        type: "OVERS",
+        payload: overs
+    }
+}

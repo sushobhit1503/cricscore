@@ -3,11 +3,13 @@ import { applyMiddleware, createStore, combineReducers } from "redux"
 import { TeamName } from "./Reducers/Team-Name"
 import { Overs } from "./Reducers/Overs"
 import { Toss } from "./Reducers/Toss"
+import { Summary } from "./Reducers/Summary"
 
 const rootReducer = combineReducers({
     TeamNameReducer: TeamName,
     OversReducer: Overs,
-    TossReducer: Toss
+    TossReducer: Toss,
+    SummaryReducer: Summary
 })
 
 const middleware = [];

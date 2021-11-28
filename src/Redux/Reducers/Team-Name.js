@@ -1,6 +1,6 @@
 const INITIAL_STATE = {
-    team1: "Chennai",
-    team2: "Kolkata"
+    team1: "CSK",
+    team2: "MI"
 }
 
 export const TeamName = (state = INITIAL_STATE, action) => {
