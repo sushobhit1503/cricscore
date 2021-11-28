@@ -1,0 +1,35 @@
+.glass {
+    width: max-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 191, 255, 0.013);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 0px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 0px rgba(40, 40, 40, 0.35) solid;
+    border-right: 0px rgba(40, 40, 40, 0.35) solid;
+}
+
+
+.submit-button {
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.lower-card {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    font-size: 13px;
+    display: flex;
+    width: 200px;
+}

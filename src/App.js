@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Routes, Route } from "react-router-dom"
+import Home from './Home';
+import Play from "./Play"
+import Batting from './Batting';
+import Overs from './Overs';
+import Bowling from "./Bowling"
+import icon from "./Icon.png"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <img src={icon} alt="logo" style={{ width: "200px", height: "50px" }} />
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/play" element={<Play />} />
+          <Route path="/batting-card" element={<Batting />} />
+          <Route path="/bowling-card" element={<Bowling />} />
+          <Route path="/over-card" element={<Overs />} />
+        </Routes>
+      </div>
+    );
+  }
 }
 
 export default App;
