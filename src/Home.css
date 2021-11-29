@@ -19,8 +19,23 @@
     margin: 5px 5px 5px 0px;
     border-radius: 3px;
     padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+.hover:hover {
+    color: #008081;
+    background-color: white;
+}
+
+select {
+    width: 200px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    align-self: center;
+    border-radius: 5px;
+    padding: 5px;
+}
 
 .submit-button {
     border: none;

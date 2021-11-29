@@ -95,9 +95,9 @@ class Home extends React.Component {
                     <div className="glass">
                         <h5 style={{ textAlign: "center" }}>SELECT NUMBER OF OVERS</h5>
                         <div style={{ display: "flex" }}>
-                            <div onClick={() => overSave(50)} style={{ cursor: "pointer", color: "white", backgroundColor: "#008081", fontSize: "18px", fontWeight: "bold", padding: "20px" }} className="glass">50 OVERS</div>
-                            <div onClick={() => overSave(20)} style={{ cursor: "pointer", color: "white", backgroundColor: "#008081", fontSize: "18px", fontWeight: "bold", padding: "20px" }} className="glass">20 OVERS</div>
-                            <div onClick={() => overSave(10)} style={{ cursor: "pointer", color: "white", backgroundColor: "#008081", fontSize: "18px", fontWeight: "bold", padding: "20px" }} className="glass">10 OVERS</div>
+                            <div onClick={() => overSave(50)} style={{ cursor: "pointer", color: "white", backgroundColor: "#008081", fontSize: "18px", fontWeight: "bold", padding: "20px" }} className="glass hover">50 OVERS</div>
+                            <div onClick={() => overSave(20)} style={{ cursor: "pointer", color: "white", backgroundColor: "#008081", fontSize: "18px", fontWeight: "bold", padding: "20px" }} className="glass hover">20 OVERS</div>
+                            <div onClick={() => overSave(10)} style={{ cursor: "pointer", color: "white", backgroundColor: "#008081", fontSize: "18px", fontWeight: "bold", padding: "20px" }} className="glass hover">10 OVERS</div>
                         </div>
                         <div style={{ fontSize: "18px", marginTop: "30px", textAlign: "center" }}>
                             Format: {this.state.overs} overs
@@ -107,8 +107,8 @@ class Home extends React.Component {
                         <h5 style={{ textAlign: "center" }}>TOSS</h5>
                         <div style={{ fontWeight: "bold", fontSize: "18px" }}>{this.state.team1} chooses to: </div>
                         <div style={{ display: "flex" }}>
-                            <div onClick={() => tossSave("Batting")} style={{ cursor: "pointer", color: "white", backgroundColor: "#008081", fontSize: "18px", fontWeight: "bold", padding: "20px" }} className="glass">BATTING</div>
-                            <div onClick={() => tossSave("Bowling")} style={{ cursor: "pointer", color: "white", backgroundColor: "#008081", fontSize: "18px", fontWeight: "bold", padding: "20px" }} className="glass">FIELDING</div>
+                            <div onClick={() => tossSave("Batting")} style={{ cursor: "pointer", color: "white", backgroundColor: "#008081", fontSize: "18px", fontWeight: "bold", padding: "20px" }} className="glass hover">BATTING</div>
+                            <div onClick={() => tossSave("Bowling")} style={{ cursor: "pointer", color: "white", backgroundColor: "#008081", fontSize: "18px", fontWeight: "bold", padding: "20px" }} className="glass hover">FIELDING</div>
                         </div>
                         <div style={{ fontSize: "18px", marginTop: "25px" }}>
                             {this.state.team2}{this.state.toss === "Bowling" ? <div> has to bat first</div> : <div>has to bowl first</div>}

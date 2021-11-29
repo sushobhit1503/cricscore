@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-    overs: 10
+    overs: 50
 }
 
 export const Overs = (state = INITIAL_STATE, action) => {

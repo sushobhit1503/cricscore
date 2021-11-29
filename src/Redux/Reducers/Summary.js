@@ -4,6 +4,8 @@ const INITIAL_STATE = {
     overs: 0,
     strikePlayer: "Player A",
     nonStrikePlayer: "Player B",
+    strikeRuns: 0,
+    nonStrikeRuns: 0,
     currentBowler: "Player J",
     currentOver: [],
     currentInnings: 1,
@@ -17,7 +19,8 @@ export const Summary = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 strikePlayer: action.payload.strike,
-                nonStrikePlayer: action.payload.nonStrike
+                nonStrikePlayer: action.payload.nonStrike,
+                strikeRuns: action.payload.strickRuns
             }
         case "CHANGE BOWLER":
             return {
@@ -27,7 +30,24 @@ export const Summary = (state = INITIAL_STATE, action) => {
         case "UPDATE RUNS":
             return {
                 ...state,
-
+                total: state.total + action.payload,
+                overs: state.overs + 1
+            }
+        case "WICKET":
+            return {
+                ...state,
+                wickets: state.wickets + 1,
+                strikePlayer: action.payload
+            }
+        case "UPDATE EXTRAS":
+            return {
+                ...state,
+                total: state.total + 1
+            }
+        case "CHANGE INNINGS":
+            return {
+                ...state,
+                currentInnings: 2
             }
         default:
             return state
